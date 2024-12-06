@@ -1,11 +1,14 @@
 <script lang="ts" setup>
 
+import { VDateInput } from 'vuetify/labs/VDateInput'
+
+
 </script>
 
 <template>
   <VRow>
     <VCol cols="12">
-      <VCard title="Timelines"><VCardText>
+      <VCard title="Timeline-Items"><VCardText>
           
           <VForm class="mt-6">
             <VRow>
@@ -14,8 +17,8 @@
                 cols="12"
               >
                 <VTextField
-                  placeholder="My Career Journey"
-                  label="Timeline Title"
+                  placeholder="Applied for Job"
+                  label="Event Title"
                 />
               </VCol>
               <VCol
@@ -23,8 +26,8 @@
                 md="6"
               >
                 <VTextField
-                  label="Storyline"
-                  placeholder="Add some details, 'Key moments in my career'"
+                  label="Event Description"
+                  placeholder="Submitted my application to XYZ company for a software engineer role."
                 />
               </VCol>
 
@@ -33,10 +36,15 @@
                 cols="12"
                 md="6"
               >
-                <VTextField
-                  label="Creation Date"
-                  placeholder="MM/DD/YYYY"
-                />
+              
+              <v-date-input 
+              label="Date input" 
+              clearable variant="outlined" 
+              prepend-icon="" 
+              prepend-inner-icon='bx bx-calendar'
+              >
+              </v-date-input>
+                
               </VCol>
 
               
@@ -44,7 +52,7 @@
                 cols="12"
                 md="6"
               >
-                <v-file-input label="File input" variant="outlined" prepend-inner-icon ='bx bxs-camera'></v-file-input>
+                <v-file-input label="File input" variant="outlined" prepend-inner-icon ='bx bxs-camera'> </v-file-input>
               </VCol>
 
            
