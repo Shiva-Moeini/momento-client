@@ -17,6 +17,10 @@ export const routes = [
         component: () => import('@/pages/timeline-items.vue'),
       },
       {
+        path: 'timelines-list',
+        component: () => import('@/pages/timelines-list.vue'),
+      },
+      {
         path: 'account-settings',
         component: () => import('@/pages/account-settings.vue'),
       },

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Timeline from '@/views/pages/timeline/Timeline.vue'
 import TimelineItems from '@/views/pages/timeline/Timeline-Items.vue'
+import TimelinesList from '@/views/pages/timeline/Timelines-List.vue'
 
 
 
@@ -14,6 +15,7 @@ import TimelineItems from '@/views/pages/timeline/Timeline-Items.vue'
     >
     <Timeline />
     <Timeline-Items />
+    <Timelines-List />
     </VCol>
   </VRow>
 </template>
