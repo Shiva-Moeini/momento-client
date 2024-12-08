@@ -1,4 +1,7 @@
 <template>
+  <VRow>
+    <VCol cols="12">
+  <VCard title="Timelines-List">
   <v-table height="300px" fixed-header>
     <thead>
       <tr>
@@ -13,6 +16,10 @@
       </tr>
     </tbody>
   </v-table>
+
+</VCard>
+</VCol>
+</VRow>
 </template>
 
 <script>
